@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Shower Enzo Ramos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Great+Vibes&family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --chocolate-oscuro: #2D1A12; 
+            --miel-viva: #F9A825;
+            --dorado-brillante: #FFD700;
+            --fondo-tarjeta: #FFF3E0;
+        }
+
+        body { margin: 0; background-color: #1a1a1a; font-family: 'Montserrat', sans-serif; display: flex; justify-content: center; }
+        
+        .invitacion {
+            width: 100%; max-width: 450px; min-height: 100vh; position: relative;
+            background-image: url('fondo.jpg'); background-size: cover; background-position: center;
+            display: flex; flex-direction: column; align-items: center;
+            box-shadow: 0 0 60px rgba(0,0,0,0.7); overflow-x: hidden;
+        }
+
+        .header { text-align: center; padding: 50px 20px 0; z-index: 10; }
+        .baby-title { 
+            font-family: 'Playfair Display', serif; font-size: 1.4rem; letter-spacing: 6px; 
+            color: var(--chocolate-oscuro); text-transform: uppercase; margin: 0;
+            text-shadow: 1px 1px 0px rgba(255,255,255,0.8);
+        }
+
+        h1 { 
+            font-family: 'Great Vibes', cursive; font-size: 5rem; 
+            color: #8B5E34; margin: -10px 0 10px;
+            filter: drop-shadow(3px 3px 2px rgba(255,255,255,0.9));
+        }
+
+        .eco-marco {
+            width: 230px; height: 230px; border: 8px solid #fff; border-radius: 40px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3); overflow: hidden; margin-bottom: 15px;
+        }
+        .eco-marco img { width: 100%; height: 100%; object-fit: cover; }
+
+        .frase-intro {
+            font-family: 'Great Vibes', cursive; font-size: 2.3rem; 
+            color: var(--chocolate-oscuro); 
+            width: 90%; text-align: center; margin: 10px 0 25px; line-height: 1;
+            font-weight: bold;
+            text-shadow: 1px 1px 0px rgba(255,255,255,0.5);
+        }
+
+        .info-grid { width: 92%; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px; }
+
+        .info-item {
+            background: var(--fondo-tarjeta); 
+            border-radius: 25px; padding: 18px 10px; text-align: center;
+            border: 2px solid var(--miel-viva);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            animation: float 4s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        /* Icono de Calendario y otros con animación de brillo */
+        .info-item i { 
+            font-size: 2.2rem; margin-bottom: 10px; display: block;
+            color: var(--miel-viva);
+            background: linear-gradient(135deg, #FFD700 0%, #F9A825 50%, #8B5E34 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0px 2px 3px rgba(0,0,0,0.3));
+            animation: shine 2.5s infinite ease-in-out;
+        }
+
+        @keyframes shine {
+            0% { transform: scale(1); filter: brightness(1); }
+            50% { transform: scale(1.1); filter: brightness(1.3) drop-shadow(0px 0px 10px var(--dorado-brillante)); }
+            100% { transform: scale(1); filter: brightness(1); }
+        }
+
+        .info-item strong { 
+            display: block; font-size: 1.1rem; 
+            color: var(--chocolate-oscuro); 
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+        }
+        .info-item span { 
+            font-size: 0.85rem; color: #4E342E; 
+            font-weight: 600; text-transform: uppercase;
+        }
+
+        .btn-container { display: flex; gap: 15px; margin-bottom: 50px; }
+        .btn-link {
+            background: var(--chocolate-oscuro); color: #fff; text-decoration: none;
+            padding: 14px 25px; border-radius: 50px; font-size: 0.85rem; font-weight: 800; 
+            display: flex; align-items: center; gap: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+            text-transform: uppercase; letter-spacing: 1px;
+            border: 2px solid var(--miel-viva);
+        }
+
+        .footer-spacer { height: 200px; width: 100%; }
+    </style>
+</head>
+<body>
+
+<div class="invitacion">
+    <div class="header">
+        <p class="baby-title">Baby Shower</p>
+        <h1>Enzo Ramos</h1>
+    </div>
+
+    <div class="eco-marco">
+        <img src="eco.jpeg"> 
+    </div>
+
+    <div class="frase-intro">
+        Con mucho amor te invitamos a celebrar la llegada de nuestro bebé
+    </div>
+
+    <div class="info-grid">
+        <div class="info-item" style="animation-delay: 0s;">
+            <i class="fa-solid fa-calendar-check"></i>
+            <strong>15 MARZO</strong>
+            <span>DOMINGO 2026</span>
+        </div>
+        <div class="info-item" style="animation-delay: 0.5s;">
+            <i class="fa-solid fa-clock"></i>
+            <strong>A PARTIR DE</strong>
+            <span>LAS 3:00 PM</span>
+        </div>
+        <div class="info-item" style="grid-column: span 2; animation-delay: 1s;">
+            <i class="fa-solid fa-location-dot"></i>
+            <strong>SAN DIEGO</strong>
+            <span>Residencia Los Andes</span>
+        </div>
+    </div>
+
+    <div class="btn-container">
+        <a href="http://googleusercontent.com/maps.google.com/6" target="_blank" class="btn-link">
+            <i class="fa-solid fa-location-arrow"></i> GPS
+        </a>
+        <a href="https://wa.me/584220113176?text=%C2%A1Hola!%20Confirmo%20con%20mucha%20alegr%C3%ADa%20mi%20asistencia%20al%20Baby%20Shower%20de%20Enzo.%20%C2%A1All%C3%AD%20nos%20vemos!" class="btn-link">
+            <i class="fa-brands fa-whatsapp"></i> CONFIRMAR
+        </a>
+    </div>
+
+    <div class="footer-spacer"></div>
+</div>
+
+</body>
+</html>
