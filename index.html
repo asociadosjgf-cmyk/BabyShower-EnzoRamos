@@ -66,7 +66,6 @@
             50% { transform: translateY(-8px); }
         }
 
-        /* Icono de Calendario y otros con animación de brillo */
         .info-item i { 
             font-size: 2.2rem; margin-bottom: 10px; display: block;
             color: var(--miel-viva);
@@ -93,14 +92,16 @@
             font-weight: 600; text-transform: uppercase;
         }
 
-        .btn-container { display: flex; gap: 15px; margin-bottom: 50px; }
+        .btn-container { display: flex; justify-content: center; width: 100%; margin-bottom: 50px; }
         .btn-link {
             background: var(--chocolate-oscuro); color: #fff; text-decoration: none;
-            padding: 14px 25px; border-radius: 50px; font-size: 0.85rem; font-weight: 800; 
-            display: flex; align-items: center; gap: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+            padding: 16px 40px; border-radius: 50px; font-size: 1rem; font-weight: 800; 
+            display: flex; align-items: center; gap: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.4);
             text-transform: uppercase; letter-spacing: 1px;
             border: 2px solid var(--miel-viva);
+            transition: transform 0.2s;
         }
+        .btn-link:active { transform: scale(0.95); }
 
         .footer-spacer { height: 200px; width: 100%; }
     </style>
@@ -140,11 +141,8 @@
     </div>
 
     <div class="btn-container">
-        <a href="http://googleusercontent.com/maps.google.com/6" target="_blank" class="btn-link">
-            <i class="fa-solid fa-location-arrow"></i> GPS
-        </a>
         <a href="https://wa.me/584220113176?text=%C2%A1Hola!%20Confirmo%20con%20mucha%20alegr%C3%ADa%20mi%20asistencia%20al%20Baby%20Shower%20de%20Enzo.%20%C2%A1All%C3%AD%20nos%20vemos!" class="btn-link">
-            <i class="fa-brands fa-whatsapp"></i> CONFIRMAR
+            <i class="fa-brands fa-whatsapp"></i> CONFIRMAR ASISTENCIA
         </a>
     </div>
 
